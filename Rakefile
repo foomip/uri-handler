@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "uri-handler"
   gem.homepage = "http://github.com/foomip/uri-handler"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Additional string functionality to make uri encoding easier and cleaner to use in your Ruby code}
+  gem.description = %Q{Additional string functionality to make uri encoding easier and cleaner to use in your Ruby code}
   gem.email = "nelsondcp@gmail.com"
   gem.authors = ["foomip"]
   # dependencies defined in Gemfile
