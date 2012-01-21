@@ -27,7 +27,8 @@ Gem::Specification.new do |s|
     "VERSION",
     "lib/uri-handler.rb",
     "test/helper.rb",
-    "test/test_uri-handler.rb"
+    "test/test_uri-handler.rb",
+    "uri-handler.gemspec"
   ]
   s.homepage = "http://github.com/foomip/uri-handler"
   s.licenses = ["MIT"]
