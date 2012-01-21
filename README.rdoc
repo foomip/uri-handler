@@ -1,15 +1,35 @@
 = uri-handler
 
-Additional string functionality to make uri encoding easier and cleaner to use in your Ruby code
+Additional string functionality to make uri encoding easier and cleaner to use in your Ruby code.
+
+Nothing fancy going on here, this module is just a wrapper around the function CGI::escape
+and CGI::unescape. Functionality is added to the String class, so just add the module and
+the extra funcitons will be there for you to use (check out the basic usage example below).
+I just wanted an easier and cleaner way to encode/decode uri strings for my ruby projects.
 
 == basic usage
 
 Add to Gemfile for rails and other bundle-enabled projects
+
 gem 'uri-handler'
 
-require 'uir-handler'
+require 'uri-handler'
 
-That's it for now - need to start working on gem
+puts "testing+123 invalid uri character/s".to_uri # => "testing%2B123+invalid+uri+character%2Fs"
+
+val = "testing+123 invalid uri character/s"
+val.to_uri!
+puts val => "testing%2B123+invalid+uri+character%2Fs"
+
+puts val.uri_decode # => "testing+123 invalid uri character/s"
+
+val.uri_decode!
+puts val # => "testing+123 invalid uri character/s"
+
+puts val.uri_encode # => "testing%2B123+invalid+uri+character%2Fs"
+
+val.uri_encode!
+puts val # => "testing%2B123+invalid+uri+character%2Fs"
 
 == Copyright
 
