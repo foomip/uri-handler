@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = "uri-handler"
-  s.version = "1.0.0"
+  s.version = "1.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["foomip"]
   s.date = "2012-01-21"
-  s.description = "Additional string functionality to make uri encoding easier and cleaner to use in your Ruby code"
+  s.description = "Nothing fancy going on here, this module is just a wrapper around the function CGI::escape\nand CGI::unescape. Functionality is added to the String class, so just add the module and\nthe extra funcitons will be there for you to use (check out the README file for basic usage).\nI just wanted an easier and cleaner way to encode/decode uri strings for my ruby projects."
   s.email = "nelsondcp@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
