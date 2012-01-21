@@ -13,23 +13,40 @@ Add to Gemfile for rails and other bundle-enabled projects
 
 gem 'uri-handler'
 
+=== code sample
+
 require 'uri-handler'
 
 puts "testing+123 invalid uri character/s".to_uri # => "testing%2B123+invalid+uri+character%2Fs"
 
+
+
 val = "testing+123 invalid uri character/s"
+
 val.to_uri!
+
 puts val => "testing%2B123+invalid+uri+character%2Fs"
+
+
 
 puts val.uri_decode # => "testing+123 invalid uri character/s"
 
+
+
 val.uri_decode!
+
 puts val # => "testing+123 invalid uri character/s"
+
+
 
 puts val.uri_encode # => "testing%2B123+invalid+uri+character%2Fs"
 
+
+
 val.uri_encode!
+
 puts val # => "testing%2B123+invalid+uri+character%2Fs"
+
 
 == Copyright
 
